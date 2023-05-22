@@ -39,4 +39,7 @@ export class CartDetailsComponent {
   incrementQuantity(theCartitem: CartItem){
       this.cartService.addToCart(theCartitem);
   }
+  decrementQuantity(theCartitem: CartItem){
+    this.cartService.decrementQuantity(theCartitem);
+  }
 }
