@@ -35,4 +35,8 @@ export class CartDetailsComponent {
     // compute cart total price and quantity
     this.cartService.computeCartTotals();
   }
+
+  incrementQuantity(theCartitem: CartItem){
+      this.cartService.addToCart(theCartitem);
+  }
 }
