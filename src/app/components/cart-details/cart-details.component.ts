@@ -42,4 +42,8 @@ export class CartDetailsComponent {
   decrementQuantity(theCartitem: CartItem){
     this.cartService.decrementQuantity(theCartitem);
   }
+
+  remove(theCartItem: CartItem){
+    this.cartService.remove(theCartItem);
+  }
 }
