@@ -9,7 +9,7 @@ export class ShopFormService {
 
   constructor() { }
 
-  getCreditCartMonths(startMonth: number): Observable<number[]>{
+  getCreditCardMonths(startMonth: number): Observable<number[]>{
     let data: number[] = [];
 
     // build an array for "Month" dropdown list
@@ -22,7 +22,7 @@ export class ShopFormService {
     return of(data);
   }
 
-  getCreditCartYears(): Observable<number[]>{
+  getCreditCardYears(): Observable<number[]>{
     let data: number[] = [];
 
     // build an array for "Year" downlist list
