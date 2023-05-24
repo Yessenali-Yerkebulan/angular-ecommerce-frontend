@@ -53,7 +53,7 @@ export class CheckoutComponent {
       // populate credit card months
 
       const startMonth: number = new Date().getMonth()+1;
-      console.log("startaMonth: "+startMonth);
+      console.log("startMonth: "+startMonth);
 
       this.shopFormService.getCreditCardMonths(startMonth).subscribe(
         data => {
