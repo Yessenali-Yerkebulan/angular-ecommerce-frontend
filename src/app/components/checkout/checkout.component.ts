@@ -88,9 +88,19 @@ export class CheckoutComponent {
           console.log("Retrieved countries: " +JSON.stringify(data));
           this.countries = data;
         }
-      )
+      );
+  }
 
+  get firstName(){
+    return this.checkoutFormGroup.get('customer.firstName');
+  }
 
+  get lastName(){
+    return this.checkoutFormGroup.get('customer.lastName');
+  }
+
+  get email(){
+    return this.checkoutFormGroup.get('customer.email');
   }
 
   copyShippingAddressToBillingAddress(event){
@@ -107,6 +117,9 @@ export class CheckoutComponent {
 
   onSubmit(){
     console.log("Handling the submit button");
+    if(this.checkoutFormGroup.invalid){
+      this.checkoutFormGroup.markAllAsTouched();
+    }
     console.log(this.checkoutFormGroup.get('customer').value);
     console.log("The email address is " + this.checkoutFormGroup.get('customer').value.email);
     console.log("The shipping address country is " + this.checkoutFormGroup.get('shippingAddress').value.country.name);
