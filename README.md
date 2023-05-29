@@ -1,6 +1,6 @@
 <h3>Frontend Part of my Full Stack Application</h3>
 <h4>Backend part: https://github.com/Yessenali-Yerkebulan/spring-boot-ecommerce-backend</h4>
-<h4>Video: </h4>
+<h4><a href="https://youtu.be/_8HYbOavfpM">Video</a></h4>
 <h4>Main Page</h4>
 <img src="https://github.com/Yessenali-Yerkebulan/angular-ecommerce-frontend/assets/113698340/43e83fd8-7cdf-46fa-95cf-67844e81ea4a">
 <h4>Search</h4>
